@@ -13,10 +13,10 @@ typedef struct {
 // Função para imprimir os dados do aluno
 void Imprimealuno(aluno alunoRecebido) {
     printf("\n\n --------- Lendo os dados da TAD aluno - struct ---------\n\n");
-    printf("Nome: %s", alunoRecebido.nome);
+    printf("Nome: %s\n", alunoRecebido.nome);
     printf("Matricula: %d \n", alunoRecebido.matricula);
     printf("Ano de Ingresso: %d\n", alunoRecebido.anoIngresso);
-    printf("Curso: %s", alunoRecebido.curso);
+    printf("Curso: %s\n", alunoRecebido.curso);
 }
 
 // Função para gravar os dados do aluno no banco de dados
