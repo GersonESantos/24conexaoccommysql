@@ -20,6 +20,7 @@ int main() {
     else
     {
         printf("Falha de conexao alunodb\n");
+        fprintf(stderr, "Erro na conexão: %s\n", mysql_error(&conexao));
        
     }
     
