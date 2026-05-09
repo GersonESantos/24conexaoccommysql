@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Compilar C com MySQL",
+            "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-I", "C:\\Program Files\\MySQL\\MySQL Server 8.0\\include",
+                "-L", "C:\\Program Files\\MySQL\\MySQL Server 8.0\\lib",
+                "-llibmysql"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Tarefa para compilar arquivos C incluindo bibliotecas do MySQL"
+        }
+    ]
+}
