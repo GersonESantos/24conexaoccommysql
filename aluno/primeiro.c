@@ -1,12 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-    printf("primeiro programa!\n");
-    
-    // Este comando faz o Windows aguardar uma tecla antes de fechar o console
-    system("pause"); 
-    
-    return 0;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	return 0;
 }
