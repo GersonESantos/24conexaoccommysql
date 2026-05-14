@@ -3,6 +3,7 @@
 
 
 int main() {
+    
     MYSQL conexao;
     mysql_init(&conexao); //retorna um endere�o de uma estrutura MYSQL ou NULL em caso de erro de aloca��o de mem�ria.
     
@@ -20,6 +21,7 @@ int main() {
     else
     {
         printf("Falha de conexao alunodb\n");
+        fprintf(stderr, "Erro na conex�o: %s\n", mysql_error(&conexao));
        
     }
     
